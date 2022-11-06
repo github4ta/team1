@@ -27,4 +27,17 @@ public class CalculatorTest{
 
         Assert.assertEquals(expected, actual, 0.1);
     }
+
+    @Test
+    public void testCalculateSumOfThePercentageToNumber() {
+        Calculator calculator = new Calculator();
+        double percent = 10;
+        double number = 100;
+        double expected = 110;
+
+        double actual = calculator.calculateSumOfThePercentageToNumber(percent, number);
+
+        Assert.assertEquals(expected, actual, 0.1);
+    }
+
 }
