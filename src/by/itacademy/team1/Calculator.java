@@ -12,5 +12,9 @@ public class Calculator{
     public double calculateSumOfThePercentageToNumber(double percent, double number){
         return number + ((number / 100) * percent);
     }
+    public double calculateSubtractionOfThePercentageFromNumber(double percent, double number) {
+        return number - ((number / 100) * percent);
+    }
+
 }
 
