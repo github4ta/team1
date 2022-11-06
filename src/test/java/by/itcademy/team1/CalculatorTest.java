@@ -15,6 +15,16 @@ public class CalculatorTest{
         double actual = calculator.calculateThePercentageOfNumber(percent, number);
 
         Assert.assertEquals(expected, actual, 0.1);
+    }
+    @Test
+    public void testCalculatePercentageRationNumberToNumber() {
+        Calculator calculator = new Calculator();
+        double number1 = 9;
+        double number2 = 27;
+        double expected = 33.3;
 
+        double actual = calculator.calculatePercentageRationNumberToNumber(number1, number2);
+
+        Assert.assertEquals(expected, actual, 0.1);
     }
 }
