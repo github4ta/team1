@@ -16,8 +16,9 @@ public class CalculatorTest{
 
         Assert.assertEquals(expected, actual, 0.1);
     }
+
     @Test
-    public void testCalculatePercentageRationNumberToNumber() {
+    public void testCalculatePercentageRationNumberToNumber(){
         Calculator calculator = new Calculator();
         double number1 = 9;
         double number2 = 27;
@@ -29,7 +30,7 @@ public class CalculatorTest{
     }
 
     @Test
-    public void testCalculateSumOfThePercentageToNumber() {
+    public void testCalculateSumOfThePercentageToNumber(){
         Calculator calculator = new Calculator();
         double percent = 10;
         double number = 100;
@@ -40,4 +41,15 @@ public class CalculatorTest{
         Assert.assertEquals(expected, actual, 0.1);
     }
 
+    @Test
+    public void testCalculateSubtractionOfThePercentageFromNumber(){
+        Calculator calculator = new Calculator();
+        double percent = 10;
+        double number = 100;
+        double expected = 90;
+
+        double actual = calculator.calculateSubtractionOfThePercentageFromNumber(percent, number);
+
+        Assert.assertEquals(expected, actual, 0.1);
+    }
 }
